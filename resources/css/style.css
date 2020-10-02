@@ -1,0 +1,604 @@
+/*-------------------------Basic Setup--------------------/
+-----------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: white;
+    color: rgb(44, 43, 43);
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.clearfix::after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/*---------------------------Basic need-----------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+
+/*----------------------Headings------------------------------*/
+
+
+/*----------------------------------------------------------*/
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: darkgrey;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 200%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: black;
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 10px;
+}
+
+
+/*for wanting the little line below the heading*/
+
+h2::after {
+    display: block;
+    content: " ";
+    height: 2px;
+    background-color: orangered;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 200px;
+}
+
+
+/*---------------------------paragraph------------------------*/
+
+
+/*------------------------------------------------------------*/
+
+.long-copy {
+    line-height: 30px;
+    width: 70%;
+    margin-left: 20%
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 140%;
+}
+
+
+/***-----------------------  icons------------------------------- ***/
+
+.icon-big {
+    font-size: 40px;
+    color: orangered;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    color: orangered;
+    font-size: 70%;
+    line-height: 150%;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+
+/*---------------------------links---------------------------*/
+
+a:link,
+a:visited {
+    color: orangered;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid orangered;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: rgb(72, 9, 245);
+    border-bottom: 1px solid transparent;
+}
+
+
+/*---------------------------Buttons---------------------------*/
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s;
+    border: 0.2s;
+    color: 0.2s;
+}
+
+.btn.button-1:link,
+.btn.button-1:visited,
+input[type=submit] {
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: white;
+    margin-right: 15px;
+}
+
+.btn.button-2:link,
+.btn.button-2:visited {
+    border: 1px solid orangered;
+    color: orangered;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #d35400;
+}
+
+.btn.button-1:hover,
+.btn.button-1:active {
+    border: 1px solid #d35400;
+}
+
+.btn.button-2:hover,
+.btn.button-2:active {
+    border: 1px solid #d35400;
+}
+
+
+/*-------------------------------meals-----------------------------*/
+
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.meal-photo img {
+    opacity: 0.5;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    transform: scale(1.03);
+}
+
+
+/*---------------------------how it works-------------------------*/
+
+.section-steps {
+    background-color: rgb(211, 204, 204);
+}
+
+.text-boxes:first-child {
+    text-align: right;
+    padding-right: 10%;
+    margin-top: 30px;
+}
+
+.text-boxes:last-child {
+    padding-left: 10%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 50%;
+    height: auto;
+}
+
+.work-steps {
+    margin-bottom: 40px;
+}
+
+.work-steps:last-of-type {
+    margin-bottom: 80px;
+}
+
+.work-steps div {
+    color: black;
+    border: 2px solid orangered;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    float: left;
+    text-align: center;
+    padding: 5px;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
+/*------------------------------city ------------------------------*/
+
+.box img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+/*------------------------------ testimonials  ------------------------------*/
+
+.customer-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: -5px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 35px;
+    display: block;
+}
+
+cite img {
+    height: 50%;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+/*--------------------------------sign-up---------------------------*/
+
+.section-plans {
+    background-color: rgb(248, 241, 238);
+}
+
+.plan-box {
+    background-color: white;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px white;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid black;
+}
+
+.plan-box div:first-child {
+    background-color: rgb(248, 220, 210);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: orangered;
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
+
+
+/*-------------------------------contact-form----------------------*/
+
+.contact-form {
+    width: 90%;
+    margin: 0 100px;
+}
+
+input[type=text],
+input[type=email],
+textarea,
+select {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid rgb(129, 126, 126);
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px, 5px, 10px, 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+/*--------------------------------header----------------------------*/
+
+
+/*------------------------------------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    margin-top: 10px;
+    height: 100px;
+    width: auto;
+    float: left;
+}
+
+.logo-black {
+    display: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 50px;
+    width: auto;
+    float: left;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    padding-top: -5px;
+    margin-top: 50px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 10px 0;
+    color: rgb(245, 238, 238);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 1px solid transparent;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid orangered;
+}
+
+
+/*-----------------------------sticky nav-------------------*/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 2px rgb(148, 143, 143);
+    z-index: 9999;
+}
+
+.main-nav {
+    margin-top: 15px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 1px 0;
+    color: #0e0b0b;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+.sticky .logo-black {
+    display: inline-block;
+}
+
+
+/*----------------------------------footer-----------------------*/
+
+footer {
+    background-color: rgb(37, 36, 36);
+    padding: 60px;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-icons {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-icons li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-icons li:last-child {
+    margin-right: 0
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-icons li a:link,
+.social-icons li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: rgb(165, 164, 164);
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.social-icons li a:hover {
+    color: grey;
+}
+
+.social-icons li a:link,
+.social-icons li a:link {
+    font-size: 180%;
+}
+
+.fa-facebook:hover {
+    color: #4668b3;
+}
+
+.fa-twitter:hover {
+    color: #365494;
+}
+
+.fa-instagram:hover {
+    color: #860e50;
+}
+
+.fa-linkedin:hover {
+    color: #3b5998;
+}
+
+footer p {
+    color: rgb(173, 166, 166);
+    text-align: center;
+    font-size: 90%;
+    margin-top: 30px;
+}
+
+
+/*---------------animations-----------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}
